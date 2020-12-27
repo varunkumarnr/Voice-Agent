@@ -8,10 +8,10 @@ const COMMANDS = {
 export default function useAlan() {
   const [alanInstance, setAlanInstance] = useState();
   const login = useCallback(() => {
-    if (window.location.href === "http://localhost:3001/login") {
+    if (window.location.href === "http://localhost:3000/login") {
       alanInstance.playText("you are in login page enter email and password");
     } else {
-      window.location.replace("http://localhost:3001/login");
+      window.location.replace("http://localhost:3000/login");
     }
   }, [alanInstance]);
   useEffect(() => {
