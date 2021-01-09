@@ -11,7 +11,7 @@ export default function useAlan() {
     if (window.location.href === "http://localhost:3000/login") {
       alanInstance.playText("you are in login page enter email and password");
     } else {
-      window.location.replace("http://localhost:3000/login");
+      window.location.replace("/login");
     }
   }, [alanInstance]);
   useEffect(() => {
